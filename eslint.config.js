@@ -28,5 +28,32 @@ export default defineConfig([
         tsconfigRootDir: import.meta.dirname,
       },
     },
+
+    rules: {
+      // Disable ForOfStatement rule, since that disallows for of loops.
+      "no-restricted-syntax": [
+        "error",
+        "ForInStatement",
+        "LabeledStatement",
+        "WithStatement",
+      ],
+
+      // Allow underscore in front of variables
+      "no-underscore-dangle": "off",
+
+      // Ignore unused variables with an underscore in front
+      "@typescript-eslint/no-unused-vars": [
+        "error",
+        {
+          args: "all",
+          argsIgnorePattern: "^_",
+          caughtErrors: "all",
+          caughtErrorsIgnorePattern: "^_",
+          destructuredArrayIgnorePattern: "^_",
+          varsIgnorePattern: "^_",
+          ignoreRestSiblings: true,
+        },
+      ],
+    },
   },
 ]);
