@@ -1,17 +1,19 @@
 @theme {
   /* Colors */
+  --color-primary-50: hsl(27, 83%, 95%);
   --color-primary-100: hsl(28, 80%, 90%);
   --color-primary-200: hsl(28, 80%, 81%);
   --color-primary-300: hsl(28, 80%, 71%);
   --color-primary-400: hsl(28, 80%, 61%);
   --color-primary-500: hsl(28, 80%, 52%);
-  --color-primary-600: hsl(28, 74%, 41%);
+  --color-primary-600: hsl(28, 73%, 47%);
   --color-primary-700: hsl(28, 75%, 31%);
   --color-primary-800: hsl(28, 74%, 21%);
   --color-primary-900: hsl(28, 74%, 10%);
 
   --color-theme: var(--color-primary-500);
-  --color-text: #242424;
+  --color-text: #555;
+  --color-gray-dark: #333;
 
   /* Spacing */
   --spacing-1: 0.25rem;

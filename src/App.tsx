@@ -1,7 +1,11 @@
-import "./App.css";
+import HeroSection from "./components/HeroSection";
 
 function App() {
-  return <div>Home Page</div>;
+  return (
+    <>
+      <HeroSection />
+    </>
+  );
 }
 
 export default App;

@@ -1,6 +1,7 @@
-import { defineConfig } from "vite";
-import { resolve } from "node:path";
+import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
+import { resolve } from "node:path";
+import { defineConfig } from "vite";
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -10,6 +11,8 @@ export default defineConfig({
         plugins: [["babel-plugin-react-compiler"]],
       },
     }),
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-call
+    tailwindcss(),
   ],
   resolve: {
     alias: {
